@@ -1,19 +1,18 @@
 {
-    "name": "site_title/landing",
-    "description": "Vittorio Landing page",
-    "keywords": ["site_title", "dinkbit", "lumen"],
+    "name": "Delyma",
+    "description": "site",
+    "keywords": ["Delyma", "apostrofe", "lumen"],
     "license": "MIT",
     "type": "project",
     "authors": [
         {
-            "name": "dinkbit",
-            "email": "developers@dinkbit.com",
-            "homepage": "http://dinkbit.com"
+            "name": "apostrofe",
+            "homepage": "http://apostrofe.com"
         },
         {
-            "name": "Rafael Masri",
-            "email": "rafael.masri@dinkbit.com",
-            "role": "Lead Developer"
+            "name": "Gerardo Gonzalez",
+            "email": "ggonzalez@apostrofe.com",
+            "role": "Frontend Developer"
         }
     ],
     "require": {

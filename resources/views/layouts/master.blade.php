@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <!--
-  __              __      __          __
- /\ \  __        /\ \    /\ \      __/\ \__
- \_\ \/\_\    ___\ \ \/'\\ \ \____/\_\ \ ,_\
- /'_` \/\ \ /' _ `\ \ , < \ \ '__`\/\ \ \ \/
-/\ \L\ \ \ \/\ \/\ \ \ \\`\\ \ \L\ \ \ \ \ \_
-\ \___,_\ \_\ \_\ \_\ \_\ \_\ \_,__/\ \_\ \__\
- \/__,_ /\/_/\/_/\/_/\/_/\/_/\/___/  \/_/\/__/
- :codemoe
+           __  __      ____   _____ _     
+    ____ |  \/  |    |  _ \ / ____| |    
+   / __ \| \  / | ___| |_) | |  __| |____
+  / / _` | |\/| |/ __|  _ <| | |_ | |_  /
+ | | (_| | |  | | (__| |_) | |__| | |/ / 
+  \ \__,_|_|  |_|\___|____/ \_____|_/___|
+   \____/               ______           
+                       |______|          
+:: @McB_Glz
 -->
 <!--[if lte IE 7 ]> <html class="ie6 ie7 ielt9"> <![endif]-->
 <!--[if IE 8 ]>     <html class="ie8 ielt9"> <![endif]-->
@@ -15,14 +16,13 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
 @include('layouts._head')
 
-  <body>
-    @include('partials._analytics')
+  <body class="@yield('class', '')">
     <!--[if lte IE 7]>
       <p class="chromeframe">Estás usando un navegador <strong>antiguo</strong>. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para visualizar el sitio correctamente.</p>
     <![endif]-->
     @include('layouts._nav')
 
-    <main class="main container" id="main_container">
+    <main class="main" id="main_container">
       @include('layouts._messages')
       @yield('content')
     </main>

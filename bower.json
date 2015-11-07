@@ -1,11 +1,19 @@
 {
-    "name": "site_title-landing",
-    "version": "1.0.0",
-    "dependencies": {
-        "modernizr": "~2.8.2",
-        "jquery": "~1.11.1",
-        "bootstrap": "~3.3.1",
-        "jquery-placeholder": "~2.1.1",
-        "superslides": "0.6.2"
-    }
+  "name": "Delyma",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "bootstrap-select": "~1.7.*",
+    "fancyBox": "~2.1.5",
+    "fontawesome": "~4.4.0",
+    "hover": "Hover#~2.0.2",
+    "jquery": "~1.11.1",
+    "jquery-placeholder": "~2.1.1",
+    "masonry": "~3.3.2",
+    "seiyria-bootstrap-slider": "~5.1.1",
+    "slick-carousel": "~1.5.8",
+    "superslides": "0.6.2",
+    "velocity": "~1.2.2",
+    "WOW": "~1.1.2"
+  }
 }

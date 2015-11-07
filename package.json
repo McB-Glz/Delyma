@@ -1,14 +1,15 @@
 {
-  "name": "site_title-landing",
+  "name": "Delyma",
   "version": "1.0.0",
-  "description": "Vittorio Landing Page",
+  "description": "Delyma",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Rafael Masri",
+  "author": "Gerardo Gonzalez",
   "license": "MIT",
   "dependencies": {
-    "bower": "^1.4.1"
+    "bower": "^1.4.1",
+    "modernizr": "^3.1.0"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -19,7 +20,7 @@
     "grunt-contrib-concat": "~0.4.0",
     "grunt-contrib-less": "~0.11.3",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-modernizr": "~0.6.1",
+    "grunt-modernizr": "~0.5.2",
     "load-grunt-tasks": "~0.6.0",
     "time-grunt": "~0.3.2",
     "grunt-notify": "~0.3.1",

@@ -22,6 +22,15 @@ module.exports = function(grunt) {
     'resources/bower_components/bootstrap/js/scrollspy.js',
     'resources/bower_components/bootstrap/js/tab.js',
     'resources/bower_components/bootstrap/js/affix.js',
+    'resources/bower_components/WOW/dist/wow.min.js',
+    //'resources/bower_components/bootstrap-select/dist/js/bootstrap-select.js',
+    //'resources/bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js',
+    'resources/bower_components/jquery-placeholder/jquery.placeholder.min.js',
+    'resources/bower_components/velocity/velocity.min.js',
+    'resources/bower_components/velocity/velocity.ui.min.js',
+    'resources/assets/js/lib/bootstrapValidator.min.js',
+    'resources/assets/js/lib/bootstrapValidatorFormFramework.min.js',
+  
 
     // Plugins
 
@@ -40,17 +49,17 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      all: [
-        'Gruntfile.js',
-        'resources/assets/js/*.js',
-        '!resources/assets/js/base.js',
-        '!resources/assets/**/*.min.*'
-      ]
-    },
+    // jshint: {
+    //   options: {
+    //     jshintrc: '.jshintrc'
+    //   },
+    //   all: [
+    //     'Gruntfile.js',
+    //     'resources/assets/js/*.js',
+    //     '!resources/assets/js/base.js',
+    //     '!resources/assets/**/*.min.*'
+    //   ]
+    // },
     less: {
       dev: {
         files: {
@@ -177,7 +186,8 @@ module.exports = function(grunt) {
           'resources/assets/js/**/*.js'
           //'<%= jshint.all %>'
         ],
-        tasks: ['jshint', 'concat', 'uglify']
+        // tasks: ['jshint', 'concat', 'uglify']
+        tasks: ['concat', 'uglify']
       },
       livereload: {
         // Browser live reloading
@@ -205,14 +215,13 @@ module.exports = function(grunt) {
     'dev', 'watch'
   ]);
   grunt.registerTask('dev', [
-    'jshint',
+    //'jshint',
     'less:dev',
     'autoprefixer:dev',
-    'concat',
-    'copy'
+    'concat'
   ]);
   grunt.registerTask('build', [
-    'jshint',
+    //'jshint',
     'less:build',
     'autoprefixer:build',
     'uglify',
