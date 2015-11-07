@@ -128,20 +128,6 @@ module.exports = function(grunt) {
         src: 'public/assets/css/main.min.css'
       }
     },
-    modernizr: {
-      build: {
-        devFile: 'resources/bower_components/modernizr/modernizr.js',
-        outputFile: 'public/assets/js/vendor/modernizr.min.js',
-        files: {
-          'src': [
-            ['public/assets/js/base.min.js','public/assets/js/app.min.js'],
-            ['public/assets/css/main.min.css']
-          ]
-        },
-        uglify: true,
-        parseFiles: true
-      }
-    },
     copy: {
       main: {
         expand: true,
@@ -225,8 +211,7 @@ module.exports = function(grunt) {
     'less:build',
     'autoprefixer:build',
     'uglify',
-    'copy',
-    'modernizr'
+    'copy'
   ]);
   grunt.registerTask('deploy', [
     'build',
