@@ -1,0 +1,25 @@
+# Laravel
+/vendor
+
+# Configuration
+.env
+
+# Assets development
+npm-debug.log
+/node_modules
+/resources/bower_components
+
+# Composer
+composer.phar
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+.tags
+
+# Packages
+_ide_helpers.php
+.vagrant/
+/nbproject/
+tests/_output/*
