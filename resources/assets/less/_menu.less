@@ -1,0 +1,65 @@
+.navbar-toggle{
+	margin-top: 18px;
+}
+
+#main-menu{
+	height: 100px;
+	border: none;
+	background-color: @bone;
+	background-image: url('../img/header-bg.jpg');
+	background-repeat: repeat-x;
+	background-position: bottom;
+	top: -100px;
+	transition: all .3s;
+
+
+	.navbar-collapse{
+		@media (max-width: @screen-xs-max) {
+			border: none;
+			margin-top: 10px;
+			background-color: @grey;
+		}
+	}
+
+
+	.main-logo{
+	}
+
+	.navbar-default{
+		
+		.navbar-nav{
+
+			li{
+
+				a{
+					
+				}
+			}
+
+		}
+	}
+
+	li{
+
+		&.general{
+			a{
+				color: @grey;
+				padding: 32px 15px 15px 15px;
+
+				&:hover{
+					color: @blueTwo;
+					text-decoration: none;
+				}
+			}
+
+			&:hover{
+				background: url('../img/underline.png') no-repeat bottom center;
+			}
+		}
+	}
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	background: none;
+}

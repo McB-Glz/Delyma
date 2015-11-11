@@ -16,7 +16,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
 @include('layouts._head')
 
-  <body class="@yield('class', '')">
+  <body class="@yield('class', 'home')">
     <!--[if lte IE 7]>
       <p class="chromeframe">Estás usando un navegador <strong>antiguo</strong>. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para visualizar el sitio correctamente.</p>
     <![endif]-->

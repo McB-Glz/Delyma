@@ -1,3 +1,6 @@
+var windowWidth;
+var windowHeight;
+
 function backgroundCover(selector){
     $(selector).each(function(){
 
@@ -57,3 +60,85 @@ function backgroundCover(selector){
         }
     });
 }
+
+function headerResize(){
+    windowWidth = $(window).width();
+    windowHeight = $(window).height();
+
+    $('#main-header').css({
+        height : windowHeight,
+        width : windowWidth
+    });
+}
+
+function menuAnimation(){
+    windowWidth = $(window).width();
+    windowHeight = $(window).height();
+
+    windowHeight = windowHeight - 100;
+
+    if ($(this).scrollTop() > windowHeight){
+        $('#main-menu').css({
+            top : 0
+        });
+    } else if ($(this).scrollTop() < windowHeight) {
+        $('#main-menu').css({
+            top : -100
+        });
+    }
+}
+
+function aboutMargin(){
+    windowHeight = $(window).height();
+
+    $('#quienes-somos').css({
+        'margin-top': windowHeight
+    });
+}
+
+function adjustable(selector, height) {
+    var maxHeight = -1;
+
+    $(selector).each(function() {
+        $(this).height('auto');
+    });
+
+    $(selector).each(function() {
+        maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+    });
+
+    if (maxHeight < height) {
+        maxHeight = 'auto';
+    }
+
+    $(selector).each(function() {
+        $(this).height(maxHeight);
+    });
+}
+
+$(document).ready(function(){
+    $('#main-menu a, #arrow-btn').smoothScroll({
+        offset : -99,
+        speed: 'auto',
+    });
+
+    headerResize();
+    backgroundCover('#main-header');
+    aboutMargin();
+    adjustable('.products-grid--single p', 20);
+
+    $(window).resize(function(){
+          clearTimeout(timeOut);
+          timeOut = setTimeout(function(){
+              headerResize();
+              backgroundCover('#main-header');
+              aboutMargin();
+              adjustable('.products-grid--single p', 20);
+          }, 300);
+    });
+
+    $(window).scroll(function() {
+        menuAnimation();
+    });
+
+});

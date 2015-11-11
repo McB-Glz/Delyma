@@ -30,6 +30,7 @@ module.exports = function(grunt) {
     'resources/bower_components/velocity/velocity.ui.min.js',
     'resources/assets/js/lib/bootstrapValidator.min.js',
     'resources/assets/js/lib/bootstrapValidatorFormFramework.min.js',
+    'resources/bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js',
   
 
     // Plugins
