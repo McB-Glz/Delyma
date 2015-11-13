@@ -19208,6 +19208,11 @@ a:hover {
   padding-top: 40px;
   padding-bottom: 50px;
 }
+@media (max-width: 1199px) {
+  .about .dots {
+    padding-top: 20px;
+  }
+}
 .about .dots .img-wrapper {
   width: 100%;
   text-align: center;
@@ -19293,7 +19298,7 @@ a:hover {
     padding-top: 25px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .marcas {
     height: 700px;
   }

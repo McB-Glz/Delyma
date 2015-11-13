@@ -127,6 +127,10 @@ a{
 	.dots{
 		padding-top:40px;
 		padding-bottom: 50px;
+		
+		@media (max-width: @screen-md-max) {
+			padding-top:20px;
+		}
 
 		.img-wrapper{
 			width: 100%;
@@ -230,7 +234,7 @@ a{
 		padding-top: 25px;
 	}
 
-	@media (min-width: @screen-lg-min) {
+	@media (min-width: @screen-sm-min) {
 		height: 700px;
 	}
 
