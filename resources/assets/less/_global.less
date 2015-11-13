@@ -4,6 +4,15 @@ body{
 	font-weight: 300;
 }
 
+a{
+	color: @blueFour;
+
+	&:hover{
+		color: @blueOne;
+		text-decoration: none;
+	}
+}
+
 .container-fluid{
 	.row{
 		max-width: 1170px;
@@ -58,6 +67,8 @@ body{
 }
 
 .two-bg{
+	background-color: @bone;
+
 	@media (min-width: @screen-sm-min) {
 		background-image: url('../img/g2w.jpg'), url('../img/w2g.jpg');
 		background-repeat: no-repeat, no-repeat;
@@ -95,6 +106,10 @@ body{
 	position: relative;
 	z-index: 2;
 
+	@media (min-width: @screen-sm-min) {
+		height: 300px;
+	}
+
 	p{
 		color: @bone;
 		font-size: 26px;
@@ -126,7 +141,6 @@ body{
 }
 
 .products{
-	background-color: @bone;
 	position: relative;
 	z-index: 2;
 
@@ -177,5 +191,182 @@ body{
 				background-repeat: no-repeat; 
 			}	
 		}
+	}
+}
+
+.marcas{
+	position: relative;
+	z-index: 2;
+
+	.marcas-title{
+		padding-top: 0;
+		padding-bottom: 25px;
+		color: @bone;
+		text-align: center;
+	}
+
+	.marcas-single{
+		margin-bottom: 50px;
+
+		p{
+			color: @bone;
+			padding-top: 25px;
+			font-size: 18px;
+		}
+
+		.img-wrapper{
+			width: 100%;
+
+			img{
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+.btn-outline{
+	border: 1px solid @blueFour;
+	color: @blueFour;
+	border-radius: 0;
+	padding: 10px;
+	background: none;
+	transition: .3s;
+	margin-top: 25px; 
+
+	&:hover{
+		background: @blueFour; 
+		color: @bone;
+	}
+}
+
+.btn-enviar{
+	border: 1px solid @bone;
+	color: @grey;
+	border-radius: 0;
+	padding: 10px;
+	background: @bone;
+	transition: .3s;
+
+	&:hover{
+		background: @blueFour; 
+		color: @bone;
+	}
+}
+
+.nogut{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.categories{
+	position: relative;
+	z-index: 2;
+
+	.categories-title{
+		margin-top: 25px;
+
+		h2{
+			color: @grey;
+			text-align: center;
+		}
+	}
+
+	.categories-single{
+		margin-bottom: 50px;
+
+		h3{
+			color: grey;
+			margin-bottom: 25px;
+		}
+
+		p{
+			font-size: 16px;
+		}
+
+		#collapseAutomotriz, #collapsePesada, #collapseIndustria{
+			margin-top: 25px;
+		}
+
+		.media{
+			margin-bottom: 25px;
+		}
+
+		.media-body{
+			p{
+				padding-top: 10px;
+			}
+		}
+
+		.img-wrapper{
+			width: 100%;
+
+			img{
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+.contact{
+	position: relative;
+	z-index: 2;
+	color: white;
+
+	.contact-form{
+		@media (min-width: @screen-sm-min) {
+			border-left: 1px solid white;
+		}
+
+		padding-top: 25px;
+		padding-bottom: 25px;
+
+		.form-control{
+			border-radius: 0;
+			height: 50px;
+			border: none;
+			margin-bottom: 25px;
+
+			&::-webkit-input-placeholder { color:@grey; font-size: 14px; }
+			&::-moz-placeholder { color:@grey; font-size: 14px; } /* firefox 19+ */
+			&:-ms-input-placeholder { color:@grey; font-size: 14px; } /* ie */
+			&input:-moz-placeholder { color:@grey; font-size: 14px; }
+		}
+	}
+
+	.contact-info{
+		.img-wrapper{
+			width: 100%;
+			img{
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		a{
+			font-size: 20px;
+			color: white;
+			text-align: center;
+			display: block;
+			margin-top: 25px;
+
+			&:hover{
+				color: @blueFour;
+				text-decoration: none;
+			}
+		}
+
+		address{
+			color: white;
+			text-align: center;
+			font-size: 22px;
+			margin-top: 25px;
+		}
+	}
+
+	.footer-logo{
+		padding-top: 20px;
+		padding-bottom: 20px; 
 	}
 }

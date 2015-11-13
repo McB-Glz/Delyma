@@ -19090,6 +19090,13 @@ body {
   color: #3c3c3b;
   font-weight: 300;
 }
+a {
+  color: #045f6b;
+}
+a:hover {
+  color: #59c2e3;
+  text-decoration: none;
+}
 .container-fluid .row {
   max-width: 1170px;
   margin: 0 auto;
@@ -19133,6 +19140,9 @@ body {
   -webkit-background-size: auto auto;
           background-size: auto;
 }
+.two-bg {
+  background-color: #f5f4f4;
+}
 @media (min-width: 768px) {
   .two-bg {
     background-image: url('../img/g2w.jpg'), url('../img/w2g.jpg');
@@ -19170,6 +19180,11 @@ body {
   position: relative;
   z-index: 2;
 }
+@media (min-width: 768px) {
+  .about {
+    height: 300px;
+  }
+}
 .about p {
   color: #f5f4f4;
   font-size: 26px;
@@ -19197,7 +19212,6 @@ body {
   padding: 0 15px;
 }
 .products {
-  background-color: #f5f4f4;
   position: relative;
   z-index: 2;
 }
@@ -19239,6 +19253,169 @@ body {
   background-image: url('../img/vectors/check.png');
   background-position: left top;
   background-repeat: no-repeat;
+}
+.marcas {
+  position: relative;
+  z-index: 2;
+}
+.marcas .marcas-title {
+  padding-top: 0;
+  padding-bottom: 25px;
+  color: #f5f4f4;
+  text-align: center;
+}
+.marcas .marcas-single {
+  margin-bottom: 50px;
+}
+.marcas .marcas-single p {
+  color: #f5f4f4;
+  padding-top: 25px;
+  font-size: 18px;
+}
+.marcas .marcas-single .img-wrapper {
+  width: 100%;
+}
+.marcas .marcas-single .img-wrapper img {
+  display: block;
+  margin: 0 auto;
+}
+.btn-outline {
+  border: 1px solid #045f6b;
+  color: #045f6b;
+  border-radius: 0;
+  padding: 10px;
+  background: none;
+  -webkit-transition: .3s;
+       -o-transition: .3s;
+          transition: .3s;
+  margin-top: 25px;
+}
+.btn-outline:hover {
+  background: #045f6b;
+  color: #f5f4f4;
+}
+.btn-enviar {
+  border: 1px solid #f5f4f4;
+  color: #3c3c3b;
+  border-radius: 0;
+  padding: 10px;
+  background: #f5f4f4;
+  -webkit-transition: .3s;
+       -o-transition: .3s;
+          transition: .3s;
+}
+.btn-enviar:hover {
+  background: #045f6b;
+  color: #f5f4f4;
+}
+.nogut {
+  padding-left: 0;
+  padding-right: 0;
+}
+.categories {
+  position: relative;
+  z-index: 2;
+}
+.categories .categories-title {
+  margin-top: 25px;
+}
+.categories .categories-title h2 {
+  color: #3c3c3b;
+  text-align: center;
+}
+.categories .categories-single {
+  margin-bottom: 50px;
+}
+.categories .categories-single h3 {
+  color: grey;
+  margin-bottom: 25px;
+}
+.categories .categories-single p {
+  font-size: 16px;
+}
+.categories .categories-single #collapseAutomotriz,
+.categories .categories-single #collapsePesada,
+.categories .categories-single #collapseIndustria {
+  margin-top: 25px;
+}
+.categories .categories-single .media {
+  margin-bottom: 25px;
+}
+.categories .categories-single .media-body p {
+  padding-top: 10px;
+}
+.categories .categories-single .img-wrapper {
+  width: 100%;
+}
+.categories .categories-single .img-wrapper img {
+  display: block;
+  margin: 0 auto;
+}
+.contact {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.contact .contact-form {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .contact .contact-form {
+    border-left: 1px solid white;
+  }
+}
+.contact .contact-form .form-control {
+  border-radius: 0;
+  height: 50px;
+  border: none;
+  margin-bottom: 25px;
+  /* firefox 19+ */
+  /* ie */
+}
+.contact .contact-form .form-control::-webkit-input-placeholder {
+  color: #3c3c3b;
+  font-size: 14px;
+}
+.contact .contact-form .form-control::-moz-placeholder {
+  color: #3c3c3b;
+  font-size: 14px;
+}
+.contact .contact-form .form-control:-ms-input-placeholder {
+  color: #3c3c3b;
+  font-size: 14px;
+}
+.contact .contact-form .form-controlinput:-moz-placeholder {
+  color: #3c3c3b;
+  font-size: 14px;
+}
+.contact .contact-info .img-wrapper {
+  width: 100%;
+}
+.contact .contact-info .img-wrapper img {
+  display: block;
+  margin: 0 auto;
+}
+.contact .contact-info a {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  display: block;
+  margin-top: 25px;
+}
+.contact .contact-info a:hover {
+  color: #045f6b;
+  text-decoration: none;
+}
+.contact .contact-info address {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 25px;
+}
+.contact .footer-logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .navbar-toggle {
   margin-top: 18px;

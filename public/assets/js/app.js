@@ -126,6 +126,9 @@ $(document).ready(function(){
     backgroundCover('#main-header');
     aboutMargin();
     adjustable('.products-grid--single p', 20);
+    adjustable('.marcas-single p', 20);
+
+    $('input, textarea').placeholder();
 
     $(window).resize(function(){
           clearTimeout(timeOut);
@@ -134,6 +137,7 @@ $(document).ready(function(){
               backgroundCover('#main-header');
               aboutMargin();
               adjustable('.products-grid--single p', 20);
+              adjustable('.marcas-single p', 20);
           }, 300);
     });
 

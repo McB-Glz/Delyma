@@ -18,7 +18,7 @@
         <li class="general"><a href="#quienes-somos">Quiénes Somos</a></li>
         <li class="general"><a href="#marcas">Marcas</a></li>
         <li class="general"><a href="#categorias">Categorías</a></li>
-        <li class="general"><a href="#contcato">Contacto</a></li>
+        <li class="general"><a href="#contacto">Contacto</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
