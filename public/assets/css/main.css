@@ -19237,6 +19237,9 @@ a:hover {
   display: block;
   margin: 0 auto;
 }
+.products .products-info i {
+  margin-left: 25px;
+}
 .products .products-title {
   margin-top: 25px;
 }
@@ -19288,6 +19291,11 @@ a:hover {
 @media (max-width: 767px) {
   .marcas {
     padding-top: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .marcas {
+    height: 700px;
   }
 }
 .marcas .marcas-title {

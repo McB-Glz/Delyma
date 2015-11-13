@@ -40,7 +40,7 @@
       <p>Contamos con un amplio portafolio de diferentes aplicaciones a traves de las marcas Royal Purple, Bel Ray y Quantum que son marcas competitivas en su oferta, de muy alta tecnología y símbolos de calidad.</p>
       <div class="row">
         <div class="col-sm-6 nogut">
-          <a href="{{ url('assets/pdf/Listado_Productos_DELYMA.pdf') }}" class="btn btn-block btn-outline" target="_blank">Conoce nuestros principales productos</a>
+          <a href="{{ url('assets/pdf/Catalogo Quantum.pdf') }}" class="btn btn-block btn-outline" target="_blank">Catalogo Quantum <i class="fa fa-download"></i></a>
         </div>
       </div>
     </div>
