@@ -36,7 +36,7 @@
 <div class="container-fluid products two-bg">
   <div class="row products-info">
     <div class="col-sm-8 pull-right">
-    <p>Grupo Delyma ofrece en México el portafolio de <a href="http://www.calumetspecialty.com/" target="_blank">Calumet Specialty Products Partners ( NASDAQ: CLMT ) </a>productor líder independiente de alta calidad en la producción de hidrocarburos de especialidades y producciónuctos combustibles en América del Norte.</p>
+    <p>Grupo Delyma ofrece en México el portafolio de <a href="http://www.calumetspecialty.com/" target="_blank">Calumet Specialty Products Partners ( NASDAQ: CLMT ) </a>productor líder independiente de alta calidad en la producción de hidrocarburos de especialidades y productos combustibles en América del Norte.</p>
       <p>Contamos con un amplio portafolio de diferentes aplicaciones a traves de las marcas Royal Purple, Bel Ray y Quantum que son marcas competitivas en su oferta, de muy alta tecnología y símbolos de calidad.</p>
       <div class="row">
         <div class="col-sm-6 nogut">
