@@ -16,7 +16,7 @@
 	.navbar-collapse{
 		@media (max-width: @screen-xs-max) {
 			border: none;
-			margin-top: 10px;
+			margin-top: 40px;
 			background-color: @grey;
 		}
 	}
@@ -50,10 +50,16 @@
 					color: @blueTwo;
 					text-decoration: none;
 				}
+
+				@media (max-width: @screen-xs-max) {
+					color: @bone;
+				}
 			}
 
-			&:hover{
-				background: url('../img/underline.png') no-repeat bottom center;
+			@media (min-width: @screen-sm-min) {
+				&:hover{
+					background: url('../img/underline.png') no-repeat bottom center;
+				}
 			}
 		}
 	}

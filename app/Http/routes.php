@@ -34,47 +34,33 @@ $app->post('send-email', function () use ($app) {
 
     $this->validate($app->request, [
         'name'       => 'required',
-        'empresa'    => 'required',
-        'tel'        => 'required|numeric|digits_between:8,13',
         'email'      => 'required|email',
-        'asunto'     => 'required',
         'message'    => 'required',
     ]);
 
     $data['name'] = $app->request->input('name');
-    $data['empresa'] = $app->request->input('empresa');
-    $data['tel'] = $app->request->input('tel');
     $data['email'] = $app->request->input('email');
-    $data['asunto'] = $app->request->input('asunto');
     $data['message'] = $app->request->input('message');
-    $data['subject'] = 'ZYX.com | '.$data['asunto'].' | '.$data['email'];
+    $data['subject'] = 'Contactp Web grupodelyma.com | '.$data['email'];
 
     $data['message'] = '
 DATOS DE CONTACTO
 
-Nombre:
+Nombre Completo:
 '.$data['name'].'
-
-Empresa:
-'.$data['empresa'].'
-
-Teléfono:
-'.$data['tel'].'
 
 Email:
 '.$data['email'].'
 
-Asunto:
-'.$data['asunto'].'
-
 Mensaje:
 '.$data['message'].'
     ';
-
+var_dump($data);
     $mail = Mail::raw($data['message'], function ($message) use ($data) {
       $message->subject($data['subject']);
-      //$message->from('no-reply@zyx.com', 'ZYX');
-      $message->to(env('MAIL_TO'));
+      $message->from('no-reply@grupodelyma.com', 'Grupo DELYMA');
+      //$message->to(env('MAIL_TO'));
+      $message->to('gerardo.gonzalez@dinkbit.com');
       $message->replyTo($data['email'], $data['name']);
     });
 

@@ -38,6 +38,11 @@
     <div class="col-sm-8 pull-right">
     <p>Grupo Delyma ofrece en México el portafolio de <a href="http://www.calumetspecialty.com/" target="_blank">Calumet Specialty Products Partners ( NASDAQ: CLMT ) </a>productor líder independiente de alta calidad en la producción de hidrocarburos de especialidades y producciónuctos combustibles en América del Norte.</p>
       <p>Contamos con un amplio portafolio de diferentes aplicaciones a traves de las marcas Royal Purple, Bel Ray y Quantum que son marcas competitivas en su oferta, de muy alta tecnología y símbolos de calidad.</p>
+      <div class="row">
+        <div class="col-sm-6 nogut">
+          <a href="{{ url('assets/pdf/Listado_Productos_DELYMA.pdf') }}" class="btn btn-block btn-outline" target="_blank">Conoce nuestros principales productos</a>
+        </div>
+      </div>
     </div>
     <div class="col-sm-4">
       <div class="img-wrapper">
@@ -53,7 +58,7 @@
   <div class="row products-grid">
     <div class="col-sm-6">
       <div class="products-grid--single bg-blueFour">
-        <p>Ahorro sustancial en gastos de operación: ahorro  en energía, ahorro en lubricante, ahorro en          mantenimiento.</p>
+        <p>Ahorro sustancial en gastos de operación: ahorro  en energía, ahorro en lubricante, ahorro en mantenimiento.</p>
       </div>
     </div>
     <div class="col-sm-6">
@@ -77,7 +82,7 @@
   
 </div>
 
-<div class="container-fluid marcas one-bg">
+<div class="container-fluid marcas one-bg" id="marcas">
   <div class="row">
     <div class="col-xs-12 marcas-title">
       <h2>Marcas</h2>
@@ -95,7 +100,7 @@
     </div>
   </div>
 
-  <div class="row marcas-single" id="marcas">
+  <div class="row marcas-single">
     <div class="col-sm-7 pull-right">
       <p>Al igual que Royal Purple® es una marca “premium” que ofrece     un completo portafolio para la industria, generando valor a las          empresas que lo usan, especialmente en el sector de la industria alimenticia, minera, autos y motos deportivas.</p>
     </div>
@@ -119,7 +124,7 @@
 
 </div>
 
-<div class="container-fluid categories two-bg">
+<div class="container-fluid categories two-bg" id="categorias">
   <div class="row">
     <div class="col-xs-12 categories-title">
       <h2>Categorías</h2>
@@ -132,7 +137,7 @@
       <p>Ofrecemos productos minerales y sintéticos para cuidar y limpiar el motor y la transmisión de sus automóviles y motocicletas.</p>
       <div class="row">
         <div class="col-sm-6 nogut">
-          <a href="#collapseAutomotriz" class="btn btn-block btn-outline" data-toggle="collapse">Conoce nuestros productos</a>
+          <a href="#collapseAutomotriz" class="btn btn-block btn-outline" data-toggle="collapse">Conoce nuestros principales productos</a>
         </div>
       </div>
       <div class="row collapse" id="collapseAutomotriz">
@@ -219,13 +224,13 @@
     </div>
   </div>
 
-  <div class="row categories-single" id="categorias">
+  <div class="row categories-single">
     <div class="col-sm-8 pull-right">
       <h3>Transporte y maquinaria pesada</h3>
-      <p>Lubricantes que permiten alcanzar el maximo rendimiento extendiendo la vida útil de la unidad, minimizando costos operativos para camiones, equipos de minería, construcción y agricultura.</p>
+      <p>Lubricantes que permiten alcanzar el máximo rendimiento extendiendo la vida útil de la unidad, minimizando costos operativos para camiones, equipos de minería, construcción y agricultura.</p>
       <div class="row">
         <div class="col-sm-6 nogut">
-          <a href="#collapsePesada" class="btn btn-block btn-outline" data-toggle="collapse">Conoce nuestros productos</a>
+          <a href="#collapsePesada" class="btn btn-block btn-outline" data-toggle="collapse">Conoce nuestros principales productos</a>
         </div>
       </div>
       <div class="row collapse" id="collapsePesada">
@@ -384,7 +389,7 @@
       <p>Lubricantes Premium diseñados específicamente para uso y aplicación de cada una de las diferentes industrias, entregando una confiable protección y un sobresaliente desempeño. </p>
       <div class="row">
         <div class="col-sm-6 nogut">
-          <a href="#collapseIndustria" class="btn btn-block btn-outline" data-toggle="collapse">Conoce nuestros productos</a>
+          <a href="#collapseIndustria" class="btn btn-block btn-outline" data-toggle="collapse">Conoce nuestros principales productos</a>
         </div>
       </div>
       <div class="row collapse" id="collapseIndustria">

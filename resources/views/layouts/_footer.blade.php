@@ -19,7 +19,7 @@
 
         <div class="row">
           <div class="col-xs-12">
-            <textarea type="text" class="form-control" rows="3" name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+            <textarea type="text" class="form-control" rows="3" name="message" id="message" placeholder="Mensaje"></textarea>
           </div>
         </div>
 
