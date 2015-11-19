@@ -34,8 +34,7 @@ $app->post('send-email', function () use ($app) {
 
     $this->validate($app->request, [
         'name'       => 'required',
-        'email'      => 'required|email',
-        'message'    => 'required',
+        'email'      => 'required|email'
     ]);
 
     $data['name'] = $app->request->input('name');
@@ -55,14 +54,20 @@ Email:
 Mensaje:
 '.$data['message'].'
     ';
-var_dump($data);
+
     $mail = Mail::raw($data['message'], function ($message) use ($data) {
       $message->subject($data['subject']);
       $message->from('no-reply@grupodelyma.com', 'Grupo DELYMA');
       //$message->to(env('MAIL_TO'));
-      $message->to('gerardo.gonzalez@dinkbit.com');
+      $message->to('contacto@grupodelyma.com');
       $message->replyTo($data['email'], $data['name']);
     });
+
+    $mail->IsSMTP(); 
+    $mail->Host = "mail.grupodelyma.com:2525";
+    $mail->SMTPAuth = true; 
+    $mail->Username = "contacto@grupodelyma.com";
+    $mail->Password = "U6#uoCC{EVMM";
 
     if ($mail) {
         $response = ['status' => 'ok'];

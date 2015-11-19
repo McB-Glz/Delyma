@@ -137,6 +137,80 @@ function smoothScrollResponsive(){
     
 }
 
+function contactFormValidation(){
+    $('#contactForm').formValidation({
+        framework: 'bootstrap',
+        message: 'Por favor introduce la información solicitada.',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            name: {
+                validators: {
+                    notEmpty: {
+                        message: 'Por favor introduce tu nombre.'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Por favor introduce tu email.'
+                    },
+                    emailAddress: {
+                        message: 'Por favor verifíca tu email.'
+                    }
+                }
+            },
+        }
+    }).on('success.form.fv', function(e) {
+
+      e.preventDefault();
+
+      var $form = $(e.target);
+
+      var $response_container = $('#response');
+
+      $form.find('button').attr('disabled', 'disabled');
+      $form.find('button').addClass('disabled');
+
+      var formData = $form.serialize();
+
+      $.ajax({
+          type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+          url         : base_url+'/send-email', // the url where we want to POST
+          data        : formData, // our data object
+          dataType    : 'json', // what type of data do we expect back from the server
+          encode      : true
+      })
+      .done(function(data) {
+
+          if (!$response_container.is(':visible')) {
+              $response_container.slideToggle('fast');
+          }
+
+          $response_container.html(data.message);
+
+          if (data.status == 'error') {
+
+              $response_container.addClass('alert-danger');
+
+          }else{
+
+              $response_container.addClass('alert-success');
+
+              $form.formValidation('resetForm', true);
+          }
+
+          $form.find('button').removeAttr('disabled');
+          $form.find('button').removeClass('disabled');
+
+      });
+    });
+}
+
 $(document).ready(function(){
 
     smoothScrollResponsive();
@@ -144,6 +218,8 @@ $(document).ready(function(){
     backgroundCover('#main-header');
     aboutMargin();
     adjustable('.products-grid--single p', 20);
+
+    contactFormValidation();
 
     if (windowWidth > 767) {
         adjustable('.marcas-single p', 20);
