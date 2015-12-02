@@ -40,7 +40,7 @@
       <p>Contamos con un amplio portafolio de diferentes aplicaciones a traves de las marcas Royal Purple, Bel Ray y Quantum que son marcas competitivas en su oferta, de muy alta tecnología y símbolos de calidad.</p>
       <div class="row">
         <div class="col-sm-6 nogut">
-          <a href="{{ url('assets/pdf/Catalogo Quantum.pdf') }}" class="btn btn-block btn-outline" target="_blank">Catálogo Quantum <i class="fa fa-download"></i></a>
+          <a href="{{ url('assets/pdf/Catalogo_Quantum.pdf') }}" class="btn btn-block btn-outline" target="_blank">Catálogo Quantum <i class="fa fa-download"></i></a>
         </div>
       </div>
     </div>
@@ -488,6 +488,11 @@
 
         </div>
 
+      </div>
+      <div class="row">
+        <div class="col-sm-6 nogut">
+          <a href="{{ url('assets/pdf/CERTIFICACIONES.pdf') }}" class="btn btn-block btn-outline" target="_blank">Principales Certificaciones y Aprobaciones  <i class="fa fa-download"></i></a>
+        </div>
       </div>
     </div>
     

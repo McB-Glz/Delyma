@@ -19339,6 +19339,7 @@ a:hover {
        -o-transition: .3s;
           transition: .3s;
   margin-top: 25px;
+  white-space: normal;
 }
 .btn-outline:hover {
   background: #045f6b;

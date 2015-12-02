@@ -25,6 +25,11 @@ $app->get('/', function () {
 });
 
 
+// $app->get('/send', function () {
+//     return view('send');
+// });
+
+
 $app->post('send-email', function () use ($app) {
 
   // if($app->request->Ajax()){
@@ -62,12 +67,6 @@ Mensaje:
       $message->to('contacto@grupodelyma.com');
       $message->replyTo($data['email'], $data['name']);
     });
-
-    $mail->IsSMTP(); 
-    $mail->Host = "mail.grupodelyma.com:2525";
-    $mail->SMTPAuth = true; 
-    $mail->Username = "contacto@grupodelyma.com";
-    $mail->Password = "U6#uoCC{EVMM";
 
     if ($mail) {
         $response = ['status' => 'ok'];
